@@ -1,0 +1,100 @@
+/* ---------------Variables------------- */
+:root{
+    --reddish: #d62323; 
+}
+
+
+/*--------------- Categories----------- */
+.categories-container{
+    margin-block: 8rem;
+    display: flex;
+    flex-direction:column;
+    gap: 2rem;
+}
+.categBtn{
+    border:none;
+    padding: 0.5rem 1rem;
+    background-color: var(--reddish);
+    font-size: 1.4em;
+    font-weight: bold;
+    border-radius: 0.3rem;
+    cursor: pointer;
+    color:white;
+}
+
+#allBtn{
+    max-width: 10rem;
+    align-self:center;
+}
+
+.categories{
+    display:flex;
+    justify-content: space-around;
+}
+
+.categBtn:hover {
+    box-shadow: rgba(255, 255, 255, 0.8) 0px 0px 30px 4px ;
+}
+
+
+/*-------------- Movies container----------- */
+.movies-container{
+    display:flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 6rem;
+    margin: 2rem;
+    background-color: black;
+}
+
+.movie-card{
+    background-color: rgba(255, 255, 255);
+    color:black;
+    width: 25rem;
+    height: 44rem;
+    border-radius: 1rem;
+    padding: 1.5rem 2rem;
+    box-shadow: rgba(214, 35, 35, 0.8) 0px 0px 80px 3px;
+    text-align: left;
+    /* display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start; */
+    position: relative;
+}
+
+.movie-poster{
+    text-align: center;
+    /* max-height: 10rem; 
+    background-color: blueviolet; */
+}
+
+.movie-poster img{
+    max-height: 20rem;
+
+}
+
+.basketBtn{
+    text-align: center;
+    cursor: pointer;
+    padding: 0.5rem 1rem;
+    border:none;
+    background-color: var(--reddish);
+    border-radius: 0.2rem;
+    color: white;
+    font-weight: 800;
+    font-size: 1em;
+    position: absolute;
+    right: 2rem;
+    bottom: 2rem;
+}
+
+/* --------------Search-------------- */
+.searchField{
+    margin-block: 4rem;
+}
+
+.searchHidden{
+    display:none;
+}
+

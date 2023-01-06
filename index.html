@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src='script/main.js' defer></script>
+    <script src='script/home.js' defer></script>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/home.css">
+    <link rel="shortcut icon" href="images/movieFav2.png" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet">
+    <title>Movieland</title>
+</head>
+
+<body>
+    <!-- Nav bar -->
+    <header>
+        <nav class="navbar">
+            <a href="index.html"><img class="logo" src="images/bigLogo3.png" alt="Movieland logo"></a>  
+            <a href="#" class="toggle-button">
+                <span class="toggle-bar"></span>
+                <span class="toggle-bar"></span>
+                <span class="toggle-bar"></span>
+            </a>
+            <ul class="nav-menu">
+                <li class="current-page"><a  href="index.html">Home</a></li>
+                <li ><a id="popcorn" href="movies.html">Movies</a></li>
+                <li><a href="#">Offers</a></li>
+                <li><a href="#">About</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <!-- Main Content -->
+    <main>
+        <!-- Carousel -->
+        <div class="main-container">
+            <!-- <h1 class="heading">Coming soon in <span class="movieland">Movieland</span></h1> -->
+            <h1 class="heading">Coming soon in 
+                <span>
+                    <div class="movieland santa-container">
+                        Movieland
+                        <span>
+                            <img class="santa" src="images/home/santa-hat2.svg" alt="">
+                        </span>
+                    </div>
+                </span>              
+            </h1>
+
+            <div class="carousel">
+                <button class="carousel__button carousel__button--left is-hidden">
+                    <!-- <img src="images/carousel/left-arrow.svg" alt="left arrow"> -->
+                    &#60;
+                </button>
+    
+                <div class="carousel__track-container">
+                    <ul class="carousel__track">
+                        <li class="carousel__slide current-slide">
+                            <img
+                            class="carousel__image" src="images/carousel/avatar3.jpeg" alt="Avatar">
+                            <!-- srcset="images/carousel/avatar-700.jpg 700w, images/carousel/avatar.jpg 2220w"
+                            sizes="(max-width: 900px) 700px, 2200px" -->
+                            
+                        </li>
+                        <li class="carousel__slide">
+                            <img class="carousel__image" src="images/carousel/creed-slide2.jpg" alt="Creed">
+                        </li>
+                        <li class="carousel__slide">
+                            <img class="carousel__image" src="images/carousel/babylon-slide3.jpg" alt="Babylon">
+                        </li>
+
+                        <li class="carousel__slide">
+                            <img class="carousel__image" src="images/carousel/little-mermaid-slide4.jpg" alt="Mermaid">
+                        </li>
+                    </ul>
+                </div>
+    
+                <button class="carousel__button carousel__button--right">
+                    <!-- <img src="images/carousel/right-arrow.svg" alt="right arrow"> -->
+                    &#62;
+                </button>
+    
+                <div class="carousel__nav">
+                    <button class="carousel__indicator current-slide"></button>
+                    <button class="carousel__indicator"></button>
+                    <button class="carousel__indicator"></button>
+                    <button class="carousel__indicator"></button>
+                </div>
+            </div>
+    
+            <section class="general">
+                <h1 class="heading">Find in <span class="movieland">Movieland</span> the biggest selection of secondhand movies in the UK</h1>
+                <img src="images/home/family.jpeg" alt="A family watching a movie">
+            </section>
+
+            <section class="general">
+                <img src="images/home/xmas.jpg" alt="A family watching a movie">
+                <h1 class="heading">Home cinema nights with your loved ones & 
+                    <span>
+                        <div class="movieland santa-container">
+                            Movieland
+                            <span>
+                                <img class="santa" src="images/home/santa-hat2.svg" alt="">
+                            </span>
+                        </div>
+                    </span>              
+                </h1>
+            </section>
+
+            <!-- <div class="image"></div> -->
+        </div>
+    
+    </main>
+
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>&copy; Movieland 2022</p>
+
+        <ul class="social">
+            <li>
+                <a href="#">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                        <!--! Font Awesome Pro 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
+                        <path
+                        d="M504 256C504 119 393 8 256 8S8 119 8 256c0 123.78 90.69 226.38 209.25 245V327.69h-63V256h63v-54.64c0-62.15 37-96.48 93.67-96.48 27.14 0 55.52 4.84 55.52 4.84v61h-31.28c-30.8 0-40.41 19.12-40.41 38.73V256h68.78l-11 71.69h-57.78V501C413.31 482.38 504 379.78 504 256z"
+                        fill="currentColor"
+                        />
+                    </svg>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                        <!--! Font Awesome Pro 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
+                        <path
+                        d="M400 32H48C21.5 32 0 53.5 0 80v352c0 26.5 21.5 48 48 48h352c26.5 0 48-21.5 48-48V80c0-26.5-21.5-48-48-48zm-48.9 158.8c.2 2.8.2 5.7.2 8.5 0 86.7-66 186.6-186.6 186.6-37.2 0-71.7-10.8-100.7-29.4 5.3.6 10.4.8 15.8.8 30.7 0 58.9-10.4 81.4-28-28.8-.6-53-19.5-61.3-45.5 10.1 1.5 19.2 1.5 29.6-1.2-30-6.1-52.5-32.5-52.5-64.4v-.8c8.7 4.9 18.9 7.9 29.6 8.3a65.447 65.447 0 0 1-29.2-54.6c0-12.2 3.2-23.4 8.9-33.1 32.3 39.8 80.8 65.8 135.2 68.6-9.3-44.5 24-80.6 64-80.6 18.9 0 35.9 7.9 47.9 20.7 14.8-2.8 29-8.3 41.6-15.8-4.9 15.2-15.2 28-28.8 36.1 13.2-1.4 26-5.1 37.8-10.2-8.9 13.1-20.1 24.7-32.9 34z"
+                        fill="currentColor"
+                        />
+                    </svg>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                        <!--! Font Awesome Pro 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
+                        <path
+                        d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z"
+                        fill="currentColor"
+                        />
+                    </svg>
+                </a>
+            </li>
+        </ul>
+
+    </footer>
+
+    
+</body>
+</html>

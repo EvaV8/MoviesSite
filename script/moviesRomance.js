@@ -166,7 +166,7 @@ const allButton = document.getElementById('allBtn');
 //http://www.omdbapi.com/?i=tt3896198&apikey=${apiKey}
 //Fetch OMDB API
 function getOmdb(titleUser, index, apiKey){
-    fetch(`http://www.omdbapi.com/?t=${titleUser}&apikey=${apiKey}`)
+    fetch(`https://www.omdbapi.com/?t=${titleUser}&apikey=${apiKey}`)
     .then(response => response.json())
     .then(data => {
         // console.log(data);
